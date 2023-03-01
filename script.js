@@ -1,11 +1,11 @@
 let config = {
-    minZoom: 7,
+    minZoom: 3,
     maxZoom: 18,
     fullscreenControl: true,
 };
-const initialZoom = 18;
-const homeLat = 52.22977;
-const HomeLng = 21.01178;
+const initialZoom = 12;
+const homeLat = 39.21666;
+const HomeLng = 9.11666;
 
 const lat = homeLat;
 const lng = HomeLng;
