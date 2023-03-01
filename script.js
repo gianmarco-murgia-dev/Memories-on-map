@@ -32,7 +32,7 @@ const customControl = L.Control.extend({
     const btn = L.DomUtil.create("button");
     btn.title = "back to home";
     btn.innerHTML = htmlTemplate;
-    btn.className += "leaflet-bar back-to-home hidden";
+    btn.className += "leaflet-bar back-to-home";
 
     return btn;
   },
@@ -41,33 +41,7 @@ const customControl = L.Control.extend({
 // adding new button to map controll
 map.addControl(new customControl());
 
-// on drag end
-map.on("moveend", getCenterOfMap);
-
 const buttonBackToHome = document.querySelector(".back-to-home");
-
-function getCenterOfMap() {
-  buttonBackToHome.classList.remove("hidden");
-
-  buttonBackToHome.addEventListener("click", () => {
-    map.flyTo([lat, lng], zoom);
-  });
-
-  map.on("moveend", () => {
-    const { lat: latCenter, lng: lngCenter } = map.getCenter();
-
-    const latC = latCenter.toFixed(3) * 1;
-    const lngC = lngCenter.toFixed(3) * 1;
-
-    const defaultCoordinate = [+lat.toFixed(3), +lng.toFixed(3)];
-
-    const centerCoordinate = [latC, lngC];
-
-    if (compareToArrays(centerCoordinate, defaultCoordinate)) {
-      buttonBackToHome.classList.add("hidden");
-    }
-  });
-}
-
-const compareToArrays = (a, b) => JSON.stringify(a) === JSON.stringify(b);
-//END return to home button
+buttonBackToHome.addEventListener("click", () => {
+  map.flyTo([lat, lng], zoom);
+});
