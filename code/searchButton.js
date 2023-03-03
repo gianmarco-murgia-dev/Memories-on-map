@@ -72,7 +72,7 @@ class SearchButton{
     // --------------------------------------------------------------
   
     new Autocomplete("marker", {
-      delay: 1000,
+      delay: 200,
       selectFirst: true,
       howManyCharacters: 2,
   
@@ -140,8 +140,8 @@ class SearchButton{
         marker.addTo(Map).bindPopup(display_name);
   
         // set marker to coordinates
-        Map.setView([cord[1], cord[0]], 8);
-        //Map.flyTo([cord[1], cord[0]], Zoom);
+        //Map.setView([cord[1], cord[0]], 8);
+        Map.flyTo([cord[1], cord[0]], Zoom);
   
         // add class to marker
         L.DomUtil.addClass(marker._icon, "leaflet-marker-locate");
