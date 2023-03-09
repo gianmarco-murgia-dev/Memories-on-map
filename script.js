@@ -1,3 +1,5 @@
+Login.askLogin()
+
 
 let config = {
     minZoom: 3,
