@@ -30,25 +30,25 @@ const points = [
         lat: 52.228785157729114,
         lng: 21.006867885589603,
         title: "Lviv",
-        image: "https://cdn3.vectorstock.com/i/1000x1000/35/52/placeholder-rgb-color-icon-vector-32173552.jpg",
+        image: "https://grzegorztomicki.pl/images/lwow/576/IMG_0202.jpg",
     },
     {
         lat: 52.22923201880194,
         lng: 21.00897073745728,
         title: "China",
-        image: "https://cdn3.vectorstock.com/i/1000x1000/35/52/placeholder-rgb-color-icon-vector-32173552.jpg",
+        image: "https://grzegorztomicki.pl/images/chiny/576/IMG_8413.jpg",
     },
     {
         lat: 52.22963944703663,
         lng: 21.01091265678406,
         title: "Morocco",
-        image: "https://cdn3.vectorstock.com/i/1000x1000/35/52/placeholder-rgb-color-icon-vector-32173552.jpg",
+        image: "https://grzegorztomicki.pl/images/maroko/576/IMG_0738.jpg",
     },
     {
         lat: 52.229928587386496,
         lng: 21.01218938827515,
         title: "Israel",
-        image: "https://cdn3.vectorstock.com/i/1000x1000/35/52/placeholder-rgb-color-icon-vector-32173552.jpg",
+        image: "https://grzegorztomicki.pl/images/izrael/576/IMG_2071.jpg",
     },
 ];
 
